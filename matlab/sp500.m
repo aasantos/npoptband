@@ -33,10 +33,10 @@ S.putopenint = putopenint;
 S.r = r ;
 S.tau = tau;
 %
-S.hcmin = 0.15;
-S.hcmax = 0.9;
-S.hpmin = 0.15;
-S.hpmax = 0.9;
+S.hcmin = 0.25;
+S.hcmax = 1.25;
+S.hpmin = 0.25;
+S.hpmax = 1.25;
 S.ngrid = 64;
 %
 tic

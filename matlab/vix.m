@@ -35,7 +35,7 @@ S.hcmin = 0.75;
 S.hcmax = 2.0;
 S.hpmin = 0.75;
 S.hpmax = 2.0;
-S.ngrid = 32;
+S.ngrid = 64;
 %
 tic
 [hoptim,cvmat,areamat,diffmat,entropymat,matcrit] = optimalbandwidth(S);

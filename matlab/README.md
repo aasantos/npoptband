@@ -10,7 +10,6 @@ minMatrix.m <br />
 callputfunctionf.m <br />
 npcallputoptimLG.m <br />
 optimalbandwidth.m <br />
-cibootstrap.m <br />
 
 #
 
@@ -20,6 +19,5 @@ vix.m <br />
 sp500.m <br />
 
 By running the scripts (functions), it loads the data, calculates the optimal
-bandwidth values, estimates the respective RNDs, sequential local and global, and
-implements a bootstrap analysis to define confidence intervals. The results are
+bandwidth values, and estimate the respective RNDs. The results are
 compared with a series of graphic analysis.

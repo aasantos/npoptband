@@ -79,6 +79,7 @@ Example:
         example for gpu
         ./vix 256 0.25 1.25 0.25 1.25 128 24.0 28.0 1
         
+        
 
 
 

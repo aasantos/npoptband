@@ -22,6 +22,9 @@ parallel (GPU) is made through an input in running the application.
 Example:
 - compile the code
      nvcc main.cu -o vix
+          ./vix
+          
+          
      
 - running the application
    - iterative introduction of the inputs

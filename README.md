@@ -30,9 +30,7 @@ Example:
    - iterative introduction of the inputs
           
           ./vix
- ./vix 256 0.75 2.0 0.75 2.0 128 10.0 47.5 0
- example for gpu
- ./vix 256 0.75 2.0 0.75 2.0 128 10.0 47.5 1
+
       
    - inputs given when the application is deployed
         ngrid number of elements in hc and hp grid

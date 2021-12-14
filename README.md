@@ -61,10 +61,10 @@ Example:
    -inputs given when the application is deployed
     
          example for cpu
-        ./sp500 256 0.25 1.25 0.25 1.25 128 10.0 47.5 0
+        ./sp500 256 0.25 1.25 0.25 1.25 128 24.0 28.0 0
         
         example for gpu
-        ./vix 256 0.25 1.25 0.25 1.25 128 10.0 47.5 1
+        ./vix 256 0.25 1.25 0.25 1.25 128 24.0 28.0 1
         
 
 

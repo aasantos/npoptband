@@ -6,3 +6,7 @@ The repository includes 3 main directories:
 
 matlab
 
+It includes code and data to perform bandwidth selection and risk-neutral density estimation 
+using MATLAB code. There are two data sets, VIX and S&P500, for which to scripts vix.m and
+sp500.m, can be used to perform the calculations. 
+

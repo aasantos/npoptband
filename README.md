@@ -46,7 +46,8 @@ Example:
         ./vix 256 0.75 2.0 0.75 2.0 128 10.0 47.5 1
         
         
-          example for cpu
+          example for cpu<\br>
+          ./sp500 256 0.25 1.25 0.25 1.25 128 24.0 28.0 0
           
           
           

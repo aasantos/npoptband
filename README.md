@@ -13,4 +13,33 @@ scripts, within the directory exists a file README.md, and the script are anotat
 facilitate eventual parameters tuning.
 
 
+vix 
+
+It includes code and data o perform bandwidth selection and risk-neutral density estimation 
+using using C and CUDA, the first to a sequential implementation, whereas the second implements a sequential.
+The code needs to be compiled through the compiler nvcc, and the choice of sequential (CPU) or 
+parallel (GPU) is made through an input in running the application. 
+
+Example:
+- compile the code
+     nvcc main.cu -o vix
+     
+- running the application
+   - iterative introduction of the inputs
+       ./vix
+      
+   - inputs given when the application is deployed
+        ngrid number of elements in hc and hp grid
+        hcmin lower value for hc
+        hcmax upper vallue for hc
+        hpmin lower valor for hp
+        hpmax upper value for hp
+        nx number of elements of the x grid
+        xmin lower value for x
+        xmax upper value for x
+        cpugpu a flag for sequential or parallel -- 0 for cpu; 1 for gpu
+        
+        
+
+
 

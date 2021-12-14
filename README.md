@@ -32,16 +32,16 @@ Example:
           ./vix
 
       
-   - inputs given when the application is deployed
-        ngrid number of elements in hc and hp grid
-        hcmin lower value for hc
-        hcmax upper vallue for hc
-        hpmin lower valor for hp
-        hpmax upper value for hp
-        nx number of elements of the x grid
-        xmin lower value for x
-        xmax upper value for x
-        cpugpu a flag for sequential or parallel -- 0 for cpu; 1 for gpu
+   - inputs given when the application is deployed 
+          - ngrid number of elements in hc and hp grid
+          - hcmin lower value for hc
+          - hcmax upper vallue for hc
+          - hpmin lower valor for hp
+          - hpmax upper value for hp
+          - nx number of elements of the x grid
+          - xmin lower value for x
+          - xmax upper value for x
+          - cpugpu a flag for sequential or parallel -- 0 for cpu; 1 for gpu
         
           example for cpu
           ./vix 256 0.75 2.0 0.75 2.0 128 10.0 47.5 0

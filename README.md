@@ -24,12 +24,12 @@ Example:
      nvcc main.cu -o vix
      
 - running the application
-   - iterative introduction of the inputsexample for cpu
+   - iterative introduction of the inputs
           ./vix 256 0.75 2.0 0.75 2.0 128 10.0 47.5 0
           example for gpu
           ./vix 256 0.75 2.0 0.75 2.0 128 10.0 47.5 1
           
-          example for cpu
+          ./vix
  ./vix 256 0.75 2.0 0.75 2.0 128 10.0 47.5 0
  example for gpu
  ./vix 256 0.75 2.0 0.75 2.0 128 10.0 47.5 1

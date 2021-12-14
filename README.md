@@ -59,8 +59,6 @@ Example:
         ./vix 256 0.25 1.25 0.25 1.25 128 24.0 28.0 1
         
         
-        
-        
 sp500
 
 The structure is in all identical to the vix, serves only to separate data sets.

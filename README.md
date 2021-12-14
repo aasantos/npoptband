@@ -12,7 +12,6 @@ sp500.m, can be used to perform the calculations. For more information on how to
 scripts, within the directory exists a file README.md, and the script are anotated to
 facilitate eventual parameters tuning.
 
-
 vix 
 
 It includes code and data o perform bandwidth selection and risk-neutral density estimation 

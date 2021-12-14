@@ -43,10 +43,28 @@ Example:
         ./vix 256 0.75 2.0 0.75 2.0 128 10.0 47.5 0
         
         example for gpu
-        ./vix 256 0.75 2.0 0.75 2.0 128 10.0 47.5 0
+        ./vix 256 0.75 2.0 0.75 2.0 128 10.0 47.5 1
         
-  
         
+sp500
+
+The structure is in all identical to the vix, serves only to separate data sets.
+
+Example:
+- compile the code
+     nvcc main.cu -o sp500
+        
+- running the application
+   - iterative introduction of the inputs
+       ./sp500
+       
+   -inputs given when the application is deployed
+    
+         example for cpu
+        ./sp500 256 0.25 1.25 0.25 1.25 128 10.0 47.5 0
+        
+        example for gpu
+        ./vix 256 0.25 1.25 0.25 1.25 128 10.0 47.5 1
         
 
 

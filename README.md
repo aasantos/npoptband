@@ -39,6 +39,14 @@ Example:
         xmax upper value for x
         cpugpu a flag for sequential or parallel -- 0 for cpu; 1 for gpu
         
+        example for cpu
+        ./vix 256 0.75 2.0 0.75 2.0 128 10.0 47.5 0
+        
+        example for gpu
+        ./vix 256 0.75 2.0 0.75 2.0 128 10.0 47.5 0
+        
+  
+        
         
 
 

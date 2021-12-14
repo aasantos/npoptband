@@ -55,11 +55,14 @@ The structure is in all identical to the vix, serves only to separate data sets.
 
 Example:
 - compile the code
-     nvcc main.cu -o sp500
+
+          nvcc main.cu -o sp500
         
 - running the application
    - iterative introduction of the inputs
-       ./sp500
+
+
+          ./sp500
        
    -inputs given when the application is deployed
     

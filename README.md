@@ -2,7 +2,6 @@
 Parallel computing with GPU for bandwidth selection applied to nonparametric estimation of risk-neutral densities associated with option prices.
 
 Implements MATLAB code, C code for sequential computing, and CUDA code for parallel computing.
-The repository includes 3 main directories:
 
 matlab
 
@@ -18,56 +17,6 @@ It includes code and data o perform bandwidth selection and risk-neutral density
 using using C and CUDA, the first to a sequential implementation, whereas the second implements a sequential.
 The code needs to be compiled through the compiler nvcc, and the choice of sequential (CPU) or 
 parallel (GPU) is made through an input in running the application. 
-
-Example:
-- compile the code
-     
-          nvcc main.cu -o vix
-          
-          
-     
-- running the application
-   - iterative introduction of the inputs
-          
-          ./vix
-
-      
-   - inputs given when the application is deployed  <br />
-          - ngrid number of elements in hc and hp grid <br />
-          - hcmin lower value for hc <br />
-          - hcmax upper vallue for hc <br />
-          - hpmin lower valor for hp <br />
-          - hpmax upper value for hp <br />
-          - nx number of elements of the x grid <br />
-          - xmin lower value for x <br />
-          - xmax upper value for x <br />
-          - cpugpu a flag for sequential or parallel -- 0 for cpu; 1 for gpu <br />
-        
-          example for cpu
-          ./vix 256 0.75 2.0 0.75 2.0 128 10.0 47.5 0
-          example for gpu
-          ./vix 256 0.75 2.0 0.75 2.0 128 10.0 47.5 1
         
         
 sp500
-
-The structure is in all identical to the vix, serves only to separate data sets.
-
-Example:
-- compile the code
-
-          nvcc main.cu -o sp500
-        
-- running the application
-   - iterative introduction of the inputs
-
-
-          ./sp500
-       
-   - inputs given when the application is deployed
-    
-          example for cpu
-          ./sp500 256 0.25 1.25 0.25 1.25 128 24.0 28.0 0
-          example for gpu
-          ./sp500 256 0.25 1.25 0.25 1.25 128 24.0 28.0 1
-         

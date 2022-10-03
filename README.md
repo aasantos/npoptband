@@ -17,6 +17,7 @@ The code was compiled using
 clang++ -std=c++11 -O2 -I"../include" runfunc.cpp main.cpp -o vix
 
 Running the app for a h_c and h_p grid of 256
+
 ./vix 256
 
 # sp500
@@ -28,6 +29,7 @@ The code was compiled using
 clang++ -std=c++11 -O2 -I"../include" runfunc.cpp main.cpp -o sp500
 
 Running the app for a h_c and h_p grid of 256
+
 ./sp500 256
 
 # vixgpu and sp500gpu
@@ -36,6 +38,7 @@ The same datasets were used and the same grids. Running the code assume the same
 performed as
 
 nvcc -I"../include" main.cu -o vix          (in the vixgpu directory)
+
 nvcc -I"../include" main.cu -o sp500.       (in the sp500gpu directory)
 
 

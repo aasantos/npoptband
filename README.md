@@ -39,6 +39,6 @@ performed as
 
 nvcc -I"../include" main.cu -o vix          (in the vixgpu directory)
 
-nvcc -I"../include" main.cu -o sp500.       (in the sp500gpu directory)
+nvcc -I"../include" main.cu -o sp500       (in the sp500gpu directory)
 
 

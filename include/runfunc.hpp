@@ -25,8 +25,6 @@ double areaEstim(double *x0,double *yy,int n);
 double entropyEstim(double *x0,double *yy,int n);
 double varEstim(double *yy,int n);
 //
-void run_in_cpu(int ngrid);
-//
 // needs to define the grids for hc (hcmin,hcmax,nhc) and hp (hpmin,hpmax,nhp)
 // and the grid for the support of the density (xmin,xmax,nx)
 // define the risk-free interest rate (r) and time to maturity 

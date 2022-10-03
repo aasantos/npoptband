@@ -11,12 +11,27 @@ sp500.m, can be used to perform the calculations. For more information on how to
 scripts, within the directory exists a file README.md, and the script are anotated to
 facilitate eventual parameters tuning.
 
+Sequential and parallel computing: Four directories are presented to test sequential and parallel
+for two datasets VIX and S&P500, vix, vixgpu, sp500, sp500gpu. Each directory contains the dataset,
+callprice, callstrike, callopenint (serve as weights), putprice, putstrike, putopenint (serve as weights),
+and strike representing a series of unique strikes needed to implement the leave_k_i_estimate. 
+
 vix 
 
-It includes code and data o perform bandwidth selection and risk-neutral density estimation 
-using using C and CUDA, the first to a sequential implementation, whereas the second implements a sequential.
-The code needs to be compiled through the compiler nvcc, and the choice of sequential (CPU) or 
-parallel (GPU) is made through an input in running the application. 
-        
+Sequential implementation for VIX. Applied to the sample included, assuming a grid for h_c and h_p
+[0.75 2.0], a range for the underlying [10.0 47.5] within a grid of 128 values. These values
+can be changed in the main.cpp file. Changing this values accordingly and replacing the sample
+files with the same others using the same name, expectedly the app should run. Future modification
+will be implemented to allow more straightforward way of defining the parameters
+
+The code was compiled using 
+
+clang++ -std=c++11 -O2 -I"../include" runfunc.cpp main.cpp -o vix
+
+Running the app for a h_c and h_p grid of 256
+
+./vix 256
         
 sp500
+
+

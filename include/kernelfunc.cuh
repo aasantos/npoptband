@@ -49,7 +49,7 @@ __global__ void kernel(double *out,
                              r,tau,
                              xRange,mRange,
                              strike,nu);
-        out[idx] = nprnd.matCVElement(hc[xi],hp[yi],zi);
+        out[idx] = nprnd.matCVElements(hc[xi],hp[yi],zi);
         }
 }
 

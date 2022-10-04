@@ -30,7 +30,7 @@ clang++ -std=c++11 -O2 -I"../include" runfunc.cpp main.cpp -o sp500
 
 Running the app for a h_c and h_p grid of 256
 
-./sp500 256
+./sp500 256  (using the current dataset it can take several days to run)
 
 # vixgpu and sp500gpu
 
@@ -40,5 +40,11 @@ performed as
 nvcc -I"../include" main.cu -o vix          (in the vixgpu directory)
 
 nvcc -I"../include" main.cu -o sp500       (in the sp500gpu directory)
+
+running:
+
+./vix 256    (using the current dataset, running time depending on the GPU, with a NVIDIA Tesla V100, 371 sec.)
+
+./sp500 256  (using the current dataset, running time depending on the GPU, with a NVIDIA Tesla V100, 1370 sec.)
 
 

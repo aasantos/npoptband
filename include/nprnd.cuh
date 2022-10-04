@@ -222,7 +222,7 @@ public:
     //
     //
     //
-    __device__ void estim_no_x(double x0,double x1,double hc,double hp)
+    __device__ void estimxex(double x0,double x1,double hc,double hp)
     {
             double x11 = 0.0; double x12 = 0.0; double x13 = 0.0; double x14 = 0.0;
             double x22 = 0.0; double x23 = 0.0; double x24 = 0.0;
@@ -350,11 +350,11 @@ public:
     //
     //
     //
-    __device__ void estimCVElement(double xex,double hc,double hp)
+    __device__ void estimCVElements(double xex,double hc,double hp)
     {
 	    double *ddf = (double*)malloc(mRange*sizeof(double));
             for(int i=0;i<this->mRange;i++){
-                this->estim_no_x(this->xRange[i],xex,hc,hp);
+                this->estimxex(this->xRange[i],xex,hc,hp);
                 ddf[i] = solqp[2];
                 this->niterations++;
             }
@@ -364,7 +364,7 @@ public:
             //
 	    free(ddf);
 	    //
-            this->estim_no_x(xex,xex,hc,hp);
+            this->estimxex(xex,xex,hc,hp);
             double fcall = this->solqp[0];
             double fput = this->solqp[4];
             int nct = 0;
@@ -396,7 +396,7 @@ public:
     //
     __device__ double matCVElement(double hc,double hp,int k)
     {
-        this->estimCVElement(this->strike[k],hc,hp);
+        this->estimCVElements(this->strike[k],hc,hp);
         return this->cv*this->variation + (1.0 + fabs(this->area - 1.0))/this->entropy;
 	//return this->cv*this->variation + log(1.0 + fabs(this->area -1.0)) - log(this->entropy);
     }

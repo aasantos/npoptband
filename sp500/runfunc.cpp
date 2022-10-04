@@ -161,8 +161,6 @@ void run_in_cpu(double hcmin,double hcmax,int nhc,double hpmin,double hpmax,int 
         printf("number of solved QP problems: %lu\n",nprnd->get_nqpprob());
         printf("number of iterations: %lu\n",nprnd->get_niterations());
         //
-        //
-        //
         clock_t end = clock();
         time_spent += (double)(end - begin) / CLOCKS_PER_SEC;
         printf("The elapsed time is %f seconds\n", time_spent);

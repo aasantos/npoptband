@@ -233,7 +233,7 @@ public:
     //
     //
     //
-    void estim_no_x(double x0,double x1,double hc,double hp)
+    void estimxex(double x0,double x1,double hc,double hp)
     {
             double x11 = 0.0; double x12 = 0.0; double x13 = 0.0; double x14 = 0.0;
             double x22 = 0.0; double x23 = 0.0; double x24 = 0.0;

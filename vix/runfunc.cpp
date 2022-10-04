@@ -131,16 +131,16 @@ void run_in_cpu(double hcmin,double hcmax,int nhc,double hpmin,double hpmax,int 
         printf("Number of puts:    %d\n",np);
         printf("Number of strikes: %d\n",nu);
         //
-		//
-		//
-		int mRange = nx;
-		double *xRange = linspace(xmin,xmax,mRange);
-		//
+	//
+	//
+	int mRange = nx;
+	double *xRange = linspace(xmin,xmax,mRange);
+	//
         NPRND *nprnd = new NPRND(callprice, callstrike, callopenint, nc,  //call data
                                  putprice, putstrike, putopenint, np,     //put  data
                                  xRange,mRange,
                                  strike, nu,
-								 r, tau);                             
+				 r, tau);                             
         //
         double time_spent = 0.0;
         clock_t begin = clock();
@@ -150,7 +150,7 @@ void run_in_cpu(double hcmin,double hcmax,int nhc,double hpmin,double hpmax,int 
         double *hpv = linspace(hpmin, hpmax, nhp);
         //
 		double sol[2];
-        nprnd->optim_bandwidth(sol,hcv, ngrid, hpv, ngrid);
+        nprnd->optim_bandwidth(sol,hcv, nhc, hpv, nhp);
         //
         free(hcv);
         free(hpv);

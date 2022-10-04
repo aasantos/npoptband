@@ -365,7 +365,7 @@ public:
     {
         double *ddf = (double*)malloc(this->mRange*sizeof(double));
 	    for(int i=0;i<this->mRange;i++){
-                this->estim_no_x(this->xRange[i],xex,hc,hp);
+                this->estimxex(this->xRange[i],xex,hc,hp);
                 ddf[i] = solqp[2];
                 this->niterations++;
             }
@@ -375,7 +375,7 @@ public:
 	    //
 	    free(ddf);
         //
-        this->estim_no_x(xex,xex,hc,hp);
+        this->estimxex(xex,xex,hc,hp);
         double fcall = solqp[0];
         double fput = solqp[4];
         int nct = 0;

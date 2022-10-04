@@ -22,7 +22,7 @@ int main(int argc,const char* argv[])
 	//
 	int ngrid = atoi(argv[1]);
 	int nhc = ngrid;
-	int nhc = ngrid;
+	int nhp = ngrid;
 	run_in_cpu(0.75, 2.0, nhc, 0.75, 2.0, nhp, 10.0, 47.5, 128, r, tau);
 	//
 	printf("Done ... \n");

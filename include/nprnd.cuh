@@ -394,14 +394,14 @@ public:
     }
     //
     //
-    __device__ double matCVElement(double hc,double hp,int k)
+    __device__ double matCVElements(double hc,double hp,int k)
     {
         this->estimCVElements(this->strike[k],hc,hp);
         return this->cv*this->variation + (1.0 + fabs(this->area - 1.0))/this->entropy;
 	//return this->cv*this->variation + log(1.0 + fabs(this->area -1.0)) - log(this->entropy);
     }
 
-    __device__ double matCVElementV1(double hc,double hp)
+    __device__ double matCVElementsV1(double hc,double hp)
     {
 	    double result = 0.0;
 	    for(int k=0;k<this->nstrike;k++){
